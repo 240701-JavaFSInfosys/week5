@@ -21,4 +21,14 @@ p {
     font-size: larger;
 }
 
-/*TODO: universal styling*/
+/*universal styling - everything will get hit with this*/
+* {
+    background-color: #595a7d2b;;
+}
+
+/*Quick flexbox example*/
+#radioContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
