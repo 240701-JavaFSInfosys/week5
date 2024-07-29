@@ -1,0 +1,24 @@
+/*Every <p> element will get this styling*/
+p {
+    color:red;
+    margin: 10%;
+    margin-left: 20%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/*Every element with classname "coolClass" will get this styling*/
+.coolClass{
+    border: double 6px green; 
+    border-radius: 60px
+}
+
+/*every element with ID "coolH4" will get this styling (but ID should be unique to individual elements)*/
+#coolH4 {
+    background-color: aquamarine;
+    color:darkslategray;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+}
+
+/*TODO: universal styling*/

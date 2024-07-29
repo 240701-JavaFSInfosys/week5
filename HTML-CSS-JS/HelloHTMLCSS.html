@@ -1,0 +1,168 @@
+<!--We can create an entire HTML skeleton by typing "!" and hitting enter-->
+
+<!DOCTYPE html> <!--doctype declaration (not considered an element). Declares what TYPE of DOCument this is-->
+<html lang="en"> <!--"root tag", the first element in an HTML file. All our HTML goes within these tags-->
+
+<!--The head is typically metadata. The <title> element changes the name of tab when our webpage is rendered-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Demo</title> 
+
+    <!--We could define CSS in the HTML head like this (uncommon, not best practice)-->
+    <style>
+        /*...But we won't*/
+    </style>
+
+    <!--Linking CSS to our HTML using an EXTERNAL STYLESHEET (best practice)-->
+    <!--All we need to do is include our CSS file with the <link> tag-->
+    <link rel="stylesheet" href="HelloHTMLCSS.css">
+
+</head>
+
+<!--The body contains all the actual content of our webpage. Our elements!-->
+<br>
+
+    <!--Note the uses of inline styling in this doc! style="..."-->
+
+    <!--h1-h6 are "headers". h1 is the biggest-->
+    <h1 style="color: fuchsia;">Hello HTML! We are full stack devs now</h1>
+
+    <!--<p> is a block element, takes an entire block of the page-->
+    <p>I just built a webpage!</p> <p>paragraphs are BLOCK ELEMENTS</p>
+    <p>Even if block elements are on the same line, they'll have their own BLOCK</p>
+
+    <br> <!--This creates an empty blank link. A line break-->
+    <!--<br> is a self-closing tag, no need for </br>-->
+
+    <!--<span> is an inline element, can exist on the same line as other inline elements-->
+    <span>I'm a span!</span> <span>We are INLINE ELEMENTS</span>
+
+    <!--<div> is your general "division" element. We usually group elements together in divs.-->
+    <div class="coolClass">
+        <p>I am a paragraph within a div!</p>
+        <span>I am a span within a div!</span>
+        <h6>I am an h6 within a div (small header)</h6>
+    </div>
+
+    <!-------------------------------(Lists)-->
+
+    <h3 class="coolClass">Favorite Movies</h3>
+
+    <!--Ordered List! Lists items in 1, 2, 3... format-->
+    <ol style="border: blue dashed 7px; padding: 5%">
+        <li>Inside Out 2</li>
+        <li>Deadpool 3</li>
+        <li>Jurassic Park</li>
+        <li>Do The Right Thing</li>
+        <li>The Big Lebowski</li>
+    </ol>
+
+    <!--Id uniquely identifies an element-->
+    <h4 id="coolH4">Honorable Mentions</h4>
+
+    <!--Unordered List! Lists items in buller format-->
+    <ul style="text-align: center; margin: 25%;">
+        <li>Rush Hour</li>
+        <li>Shrek 2</li>
+        <li>Willa Wonka</li>
+        <li>Everything Everywhere All At Once</li>
+    </ul>
+
+    <!-------------------------------(Tables)-->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Favorite Animal</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ben (and also Nori)</td>
+                <td>Capybaras</td>
+            </tr>
+            <tr>
+                <td>Jamie</td>
+                <td>Chinchillas</td>
+            </tr>
+            <tr>
+                <td>Mikel</td>
+                <td>Elephant</td>
+            </tr>
+            <tr>
+                <td>Sai</td>
+                <td>Platypus... PERRY the Platypus?</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Axolotl</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!-------------------------------(Inputs)-->
+
+    <p>Enter your name:</p>
+    <input type="text" placeholder="ex: John Doe">
+
+    <p>Enter your age:</p>
+    <input type="number">
+
+    <p>Enter your password</p>
+    <input type="password">
+
+    <!--Radio Buttons only let you choose one of the options-->
+    <h4>Choose An Option:</h4>
+
+    <div>
+        <input type="radio" name="radioGroup" id="radio1">
+        <label for="radio1">Option A</label>
+    </div>
+    <div>
+        <input type="radio" name="radioGroup" id="radio2">
+        <label for="radio2">Option B</label>
+    </div>
+
+    <!--Checkboxes allow you to select multiple options-->
+
+    <h4>How do you feel?</h4>
+
+    <div>
+        <input type="checkbox" name="checkGroup" id="check1">
+        <label for="check1">Happy</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="checkGroup" id="check2">
+        <label for="check2">Sad</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="checkGroup" id="check3">
+        <label for="check3">Hungry</label>
+    </div>
+
+    <!--NOTE: radios and checks are inline, so I put them in divs (block) to get them vertically rendered-->
+
+    <br>
+
+    <!--Select lets us make dropdowns-->
+    <select name="cars" id="cars">
+        <option value="" disabled selected>Select Car</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Honda">Honda</option>
+        <option value="Acura">Acura</option>
+        <option value="Jeep">Jeep</option>
+    </select>
+
+    <button>Hi I'm a button! Click me to do nothing</button>
+    
+    <br><br><br><br><br><br>
+
+</body>
+</html>
