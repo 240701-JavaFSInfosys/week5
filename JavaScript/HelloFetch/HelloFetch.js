@@ -53,3 +53,5 @@ function renderHTML(data){
     pokepic.setAttribute("src", data.sprites.front_default)
 
 }
+
+//TODO: hypothetical POST request 
