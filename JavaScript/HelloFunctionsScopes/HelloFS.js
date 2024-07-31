@@ -72,10 +72,59 @@ greeter() //again, "Hello Samuel"
 
 console.log("================(Global Scope)")
 
+//anything that is globally scoped is visible thru the ENTIRE app/file/whatever 
 
+console.log(a)
+
+//This^ is an example of HOISTING - all vars and functions get hoisted to the top of their scope
+var a = 5
+
+console.log(a) //now, we can see the value. It's been defined
+
+//Let's try this with a let
+
+//console.log(b) <- THAT'S ILLEGAL! let and const are NOT hoisted
+let b = 10
+
+console.log(b) //this, of course, is legal. b has been defined
 
 
 console.log("================(Local Scope)")
 
+//block scope------------------/
+
+//any variable within a block that ISN'T a function
+
+if(true){
+    var c = "I'm a var in a block - block scoped!"
+    console.log(c)
+    let d = "I'm a let in a block - block scoped!"
+    console.log(d)
+}
+
+console.log(c) //vars are globally scoped - visible outside its block
+//console.log(d) //lets are NOT VISIBLE outside their scope
+
+//functional scope-------------/
+
+//any variable defined within a function
+
+function scopeTest(){
+    console.log(e)
+    var e = "I'm a var in a function! Functional scoped"
+    console.log(e)
+}
+
+scopeTest()
+
+console.log(e) //FUNCTIONS are the only blocks that confine vars to a scope. In this case, the var is only global to the function, not the entire file
 
 
+/* The main difference between block and function scope is...
+
+    -vars are NOT visible outside the function they're declared in
+    -BUT, vars ARE visible outside of any non-function block they're declared in
+
+    -lets are only visible within their block, period. 
+    
+    Since we only really use "let" these days, we get to ignore that quirk of var. but you should know it for QC :) */
