@@ -54,4 +54,13 @@ function renderHTML(data){
 
 }
 
-//TODO: hypothetical POST request 
+//Hypothetical POST request--------------------
+
+//In any non-GET request, fetch() needs us to include the configuration object parameter
+await fetch(url, {
+    method: "POST", //sends a POST instead of a GET
+    body: JSON.stringify(newPokemonObject) //imagine we're sending a pokemon to PokeAPI
+})
+.then("stuff")
+.catch("error handling stuff")
+.finally("even more stuff that will always run no matter what")
