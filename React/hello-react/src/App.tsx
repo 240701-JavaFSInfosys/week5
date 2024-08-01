@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { FirstComponent } from './components/FirstComponent/FirstComponent';
+import { ParentComponent } from './components/ParentComponent/ParentComponent';
+import { ChildComponent } from './components/ChildComponent/ChildComponent';
 
 /* The App.tsx is the root of our app (at least when it comes to rendering stuff on the page - specifically components) 
 
@@ -18,6 +20,7 @@ function App() {
        <h3>React will reload the webpage with every saved change to the app!</h3>
 
        <FirstComponent></FirstComponent>
+       <ParentComponent></ParentComponent>
 
     </div>
   );
