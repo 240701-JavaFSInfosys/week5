@@ -16,8 +16,8 @@ export const ParentComponent: React.FC = () => {
        1) A Variable that lets us ACCESS the state value
        2) A Mutator (like a setter in Java) to CHANGE the state value
        3) the actual useState Hook, which sets up state and lets us define a default value */
-    let[favColor, setColor] = useState("Blue")
-    let[favFood, setFood] = useState("Spicy Meatball")
+    let [favColor, setColor] = useState("Blue")
+    let [favFood, setFood] = useState("Spicy Meatball")
 
     return(
         <div>

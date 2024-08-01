@@ -4,6 +4,7 @@ import './App.css';
 import { FirstComponent } from './components/FirstComponent/FirstComponent';
 import { ParentComponent } from './components/ParentComponent/ParentComponent';
 import { ChildComponent } from './components/ChildComponent/ChildComponent';
+import { UserComponent } from './components/UserComponent/UserComponent';
 
 /* The App.tsx is the root of our app (at least when it comes to rendering stuff on the page - specifically components) 
 
@@ -21,6 +22,7 @@ function App() {
 
        <FirstComponent></FirstComponent>
        <ParentComponent></ParentComponent>
+       <UserComponent></UserComponent>
 
     </div>
   );
