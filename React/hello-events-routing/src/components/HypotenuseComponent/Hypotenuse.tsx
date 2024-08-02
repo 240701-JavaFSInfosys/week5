@@ -38,6 +38,9 @@ export const Hypotenuse: React.FC = () => {
     }
 
 
+    //Look below! We see two different types of event listeners:
+    //-onChange: executes some function when the element changes (good for storing inputs)
+    //-onClick: executes some function when the element is clicked (usually a button, for all kinds of stuff)
     return(
         <div className="input-container">
             <h3>Hypotenuse Calculator</h3>

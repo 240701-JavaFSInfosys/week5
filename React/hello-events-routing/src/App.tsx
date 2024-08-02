@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Hypotenuse } from './components/HypotenuseComponent/Hypotenuse';
 import { EmployeeContainer } from './components/EmployeeComponent/EmployeeContainer';
+import { data } from './employeeData';
 
 /* In this demo, we'll use react-router-dom to establish routes for our components \
 This is what lets us dynamically render components based on URL endpoints
@@ -17,7 +18,7 @@ function App() {
       <BrowserRouter>
           <Routes>
               <Route path="/hyp" element={<Hypotenuse/>}></Route>
-              <Route path="/emp" element={<EmployeeContainer/>}></Route>
+              <Route path="/emp" element={<EmployeeContainer incomingData={data}/>}></Route>
           </Routes>
       </BrowserRouter>
 
