@@ -2,6 +2,7 @@
 //This component will render x number of Employee components
 
 import { useEffect, useState } from "react"
+import { Employee } from "./Employee"
 
 //This wil take in data from the employeeData.ts
 export const EmployeeContainer: React.FC<any> = (incomingData:any) => {
@@ -31,7 +32,7 @@ export const EmployeeContainer: React.FC<any> = (incomingData:any) => {
             {/* using map() to render an Employee Component for every employee in the employees array */}
             <div>
                 {employees.map((employee:any) => {
-                    return <p>{employee.name}</p>
+                    return <Employee {...employee} key={employee.userId}></Employee>
                 })}
             </div>
 
