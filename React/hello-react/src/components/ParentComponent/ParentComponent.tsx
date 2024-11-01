@@ -5,17 +5,19 @@ import { ChildComponent } from "../ChildComponent/ChildComponent"
 export const ParentComponent: React.FC = () => {
 
 
-    /* State is an object that stores data related to a Component 
-       Why not just use a regular variable? 
-       The advantage of using State is that we can pass state data to a child Component's props
-       BIG PICTURE: A parent's state gets sent in to child components as props
+/* State is an object that stores data related to a Component 
+   Why not just use a regular variable? 
+   The advantage of using State is twofold:
+        -we can pass state data to a child Component's props
+        -when a component's state changes, it rerenders so the change takes effect immediately
+   BIG PICTURE: A parent's state gets sent in to child components as props
 
-       We define state with the "useState" hook
+   We define state with the "useState" hook
 
-       We declare:
-       1) A Variable that lets us ACCESS the state value
-       2) A Mutator (like a setter in Java) to CHANGE the state value
-       3) the actual useState Hook, which sets up state and lets us define a default value */
+   We declare:
+   1) A Variable that lets us ACCESS the state value
+   2) A Mutator (like a setter in Java) to CHANGE the state value
+   3) the actual useState Hook, which sets up state and lets us define a default value */
     let [favColor, setColor] = useState("Blue")
     let [favFood, setFood] = useState("Spicy Meatball")
 
